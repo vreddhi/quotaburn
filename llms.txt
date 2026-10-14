@@ -17,6 +17,12 @@
 
 ## Guides
 - [Cut your agent bill](https://quotaburn.com/cut-your-agent-bill/)
+- [Claude Code usage limits explained](https://quotaburn.com/claude-code-usage-limits/)
+- [Cursor pricing 2026 (with Grok plans)](https://quotaburn.com/cursor-pricing/)
+- [Cheapest model for coding agents](https://quotaburn.com/cheapest-model-for-coding-agents/)
+- [Codex vs Claude Code cost](https://quotaburn.com/codex-vs-claude-code-cost/)
+- [How to stop hitting AI usage limits](https://quotaburn.com/stop-hitting-ai-usage-limits/)
+- [Prompt caching savings calculator](https://quotaburn.com/prompt-caching-calculator/)
 - [Methodology](https://quotaburn.com/methodology/)
 
 ## Quick facts
