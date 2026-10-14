@@ -1,0 +1,40 @@
+# QuotaBurn
+
+> Agent cost & usage-limit tracker: plans, usage limits and per-token API prices for AI coding agents, each with an official source URL and last-verified date (data verified 2026-10-13).
+
+## Data
+- [Full dataset (JSON)](https://quotaburn.com/data.json)
+- [Model API prices](https://quotaburn.com/models/)
+
+## Tools
+- [Claude Code pricing & limits](https://quotaburn.com/tools/claude-code/)
+- [Cursor pricing & limits](https://quotaburn.com/tools/cursor/)
+- [OpenAI Codex pricing & limits](https://quotaburn.com/tools/openai-codex/)
+- [GitHub Copilot pricing & limits](https://quotaburn.com/tools/github-copilot/)
+- [Windsurf (now Devin Desktop) pricing & limits](https://quotaburn.com/tools/windsurf-devin-desktop/)
+- [Devin pricing & limits](https://quotaburn.com/tools/devin/)
+- [Gemini CLI pricing & limits](https://quotaburn.com/tools/gemini-cli/)
+
+## Guides
+- [Cut your agent bill](https://quotaburn.com/cut-your-agent-bill/)
+- [Methodology](https://quotaburn.com/methodology/)
+
+## Quick facts
+- Claude Fable 5.1 (Anthropic): $10 input / $50 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- Claude Opus 5.5 (Anthropic): $4 input / $20 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- Claude Sonnet 5.5 (Anthropic): $2 input / $10 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- Claude Haiku 5.5 (Anthropic): $0.5 input / $2.5 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- Claude Opus 5 (legacy) (Anthropic): $5 input / $25 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- Claude Sonnet 4.6 (legacy) (Anthropic): $3 input / $15 output per 1M tokens (verified 2026-10-13, https://claude.com/pricing)
+- GPT-6 Astra (OpenAI): $10 input / $50 output per 1M tokens (verified 2026-10-13, https://platform.openai.com/docs/pricing)
+- GPT-6.1 Sol (OpenAI): $2 input / $10 output per 1M tokens (verified 2026-10-13, https://platform.openai.com/docs/pricing)
+- GPT-6 Luna (OpenAI): $0.1 input / $0.5 output per 1M tokens (verified 2026-10-13, https://platform.openai.com/docs/pricing)
+- GPT-5.6 Sol (OpenAI): $4 input / $20 output per 1M tokens (verified 2026-10-13, https://platform.openai.com/docs/pricing)
+- GPT-5.3 Codex (OpenAI): $1.75 input / $14 output per 1M tokens (verified 2026-10-13, https://platform.openai.com/docs/pricing)
+- Gemini 4 Argon (Google): $2 input / $10 output per 1M tokens (verified 2026-10-13, https://ai.google.dev/gemini-api/docs/pricing)
+- Gemini 3.8 Flash (Google): $0.75 input / $3.75 output per 1M tokens (verified 2026-10-13, https://ai.google.dev/gemini-api/docs/pricing)
+- Gemini 3.1 Pro Preview (Google): $2 input / $12 output per 1M tokens (verified 2026-10-13, https://ai.google.dev/gemini-api/docs/pricing)
+- Gemini 3.5 Flash-Lite (Google): $0.3 input / $2.5 output per 1M tokens (verified 2026-10-13, https://ai.google.dev/gemini-api/docs/pricing)
+- Grok 4.7 (xAI): $2 input / $6 output per 1M tokens (verified 2026-10-13, https://docs.x.ai/docs/models)
+- Grok Build 0.1 (xAI): $1 input / $2 output per 1M tokens (verified 2026-10-13, https://docs.x.ai/docs/models)
+- Grok 4.3 (xAI): $1.25 input / $2.5 output per 1M tokens (verified 2026-10-13, https://docs.x.ai/docs/models)

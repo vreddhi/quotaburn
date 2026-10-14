@@ -1,0 +1,461 @@
+{
+ "site": {
+  "name": "QuotaBurn",
+  "tagline": "Agent cost & usage-limit tracker",
+  "url": "https://quotaburn.com",
+  "data_verified": "2026-10-13"
+ },
+ "tools": [
+  {
+   "slug": "claude-code",
+   "name": "Claude Code",
+   "vendor": "Anthropic",
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Usage resets on a rolling 5-hour session window; paid plans add weekly limits. Claude Code shares one usage pool with Claude chat. Pro = at least 5x Free per session; Max = 5x or 20x Pro. No fixed message count is published. Past the limit you can enable usage credits billed at standard API rates.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "note": "Claude Code not included"
+    },
+    {
+     "name": "Pro",
+     "price": 20,
+     "note": "$17/mo billed annually ($200/yr); includes Claude Code"
+    },
+    {
+     "name": "Max 5x",
+     "price": 100,
+     "note": "5x Pro usage; includes $100/mo API credits"
+    },
+    {
+     "name": "Max 20x",
+     "price": 200,
+     "note": "20x Pro usage; $200/mo API credits listed. Plan price not shown explicitly on page text ('From $100')",
+     "status": "unverified"
+    },
+    {
+     "name": "Enterprise",
+     "price": 20,
+     "note": "$20/seat/mo + usage at API rates, billed annually"
+    }
+   ]
+  },
+  {
+   "slug": "cursor",
+   "name": "Cursor",
+   "vendor": "Cursor (sold via X Subscription Corp)",
+   "source": "https://cursor.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Every tier has a usage pool shared across Cursor and Grok that refreshes weekly. Plus = Grok models only. Premium and up: third-party models (Claude, GPT, etc.) are billed separately at API list price, with optional spending caps. Top-offs available.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "note": "Limited agent and chat requests"
+    },
+    {
+     "name": "Plus",
+     "price": 8,
+     "note": "Basic pool; Grok models only"
+    },
+    {
+     "name": "Premium",
+     "price": 30,
+     "note": "4x Plus usage; cloud agents, Bugbot; 3rd-party models at API price"
+    },
+    {
+     "name": "Super",
+     "price": 100,
+     "note": "15x Plus usage; priority access at peak"
+    },
+    {
+     "name": "Ultra",
+     "price": 200,
+     "note": "50x Plus usage"
+    },
+    {
+     "name": "Teams",
+     "price": 30,
+     "note": "From $30/user/mo"
+    }
+   ]
+  },
+  {
+   "slug": "openai-codex",
+   "name": "OpenAI Codex",
+   "vendor": "OpenAI",
+   "source": "https://learn.chatgpt.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Plus: rolling 5-hour window plus possible weekly limits. OpenAI's estimate for Plus is 15-160 local GPT-6.1 Sol messages, 5-45 GPT-6 Astra, or 350-3,000 GPT-6 Luna messages per 5 hours. Pro plans currently have no 5-hour limit (weekly limits may apply). Credits can extend usage; Codex CLI can also run on an API key at API prices.",
+   "plans": [
+    {
+     "name": "Free / Go",
+     "price": 0,
+     "note": "Limited Codex access (Go price not shown on official page text)"
+    },
+    {
+     "name": "Plus",
+     "price": 20,
+     "note": "Codex on web, CLI, IDE, iOS"
+    },
+    {
+     "name": "Pro 100",
+     "price": 100,
+     "note": "No 5-hour limit"
+    },
+    {
+     "name": "Pro 200",
+     "price": 200,
+     "note": "More usage than Pro 100 (source: help.openai.com/en/articles/9793128)"
+    },
+    {
+     "name": "Pro 500",
+     "price": 500,
+     "note": "Highest usage; Ultrafast mode"
+    },
+    {
+     "name": "Business (Standard seat)",
+     "price": 25,
+     "note": "$20/mo annual; source openai.com/api/pricing (business page)"
+    }
+   ]
+  },
+  {
+   "slug": "github-copilot",
+   "name": "GitHub Copilot",
+   "vendor": "GitHub / Microsoft",
+   "source": "https://github.com/features/copilot/plans",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Agent mode, chat, code review, cloud agent and CLI consume GitHub AI Credits (1 credit = $0.01); credits vary by model. Allowance resets monthly. Completions and next-edit suggestions are unlimited on paid plans. Free: 2,000 completions + 50 chat requests. Past the allowance: set a paid-usage budget or switch to a cheaper model.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "note": "Limited chat and agent usage"
+    },
+    {
+     "name": "Pro",
+     "price": 10,
+     "note": "$15/mo of AI credits ($10 base + $5 flex)"
+    },
+    {
+     "name": "Pro+",
+     "price": 39,
+     "note": "$70/mo of AI credits ($39 base + $31 flex)"
+    },
+    {
+     "name": "Max",
+     "price": 100,
+     "note": "$200/mo of AI credits listed in plan table"
+    }
+   ]
+  },
+  {
+   "slug": "windsurf-devin-desktop",
+   "name": "Windsurf (now Devin Desktop)",
+   "vendor": "Cognition",
+   "source": "https://windsurf.com/blog/windsurf-pricing-plans",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "No credits: quota refreshes daily and weekly. Pro/Teams published estimates: 7-27 msgs/day on Premium Plus models (e.g. Opus 4.6, GPT-5.4), 8-101 on Premium, 47-190 on Lightweight; Max: 42-170 / 47-631 / 291-1,190. Extra usage billed at API pricing. Windsurf was rebranded Devin Desktop (third-party report); windsurf.com/pricing now 404s.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "note": "Light agent quota; unlimited Tab"
+    },
+    {
+     "name": "Pro",
+     "price": 20,
+     "note": ""
+    },
+    {
+     "name": "Teams",
+     "price": 40,
+     "note": "per seat (see Devin Teams for current $80 minimum)"
+    },
+    {
+     "name": "Max",
+     "price": 200,
+     "note": ""
+    }
+   ]
+  },
+  {
+   "slug": "devin",
+   "name": "Devin",
+   "vendor": "Cognition",
+   "source": "https://docs.devin.ai/admin/billing/self-serve",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Self-serve plans include a quota that refreshes daily and weekly; overage is billed as dollar-denominated on-demand credits at API pricing. ACUs remain for Enterprise only. Quota sizes are not published in tokens.",
+   "plans": [
+    {
+     "name": "Free",
+     "price": 0,
+     "note": ""
+    },
+    {
+     "name": "Pro",
+     "price": 20,
+     "note": ""
+    },
+    {
+     "name": "Max",
+     "price": 200,
+     "note": ""
+    },
+    {
+     "name": "Teams",
+     "price": 80,
+     "note": "$80/mo minimum; $40 per full seat"
+    }
+   ]
+  },
+  {
+   "slug": "gemini-cli",
+   "name": "Gemini CLI",
+   "vendor": "Google",
+   "source": "https://docs.cloud.google.com/gemini/docs/quotas",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "limits": "Gemini CLI + Code Assist agent mode share a quota: 1,500 requests/user/day (Code Assist Standard), 2,000 (Enterprise). One prompt can trigger several model requests. Otherwise metered per token via a paid Gemini API key. The old personal-Google-account free tier (1,000 req/day) is reported discontinued since June 18, 2026; the GitHub README still advertises it.",
+   "plans": [
+    {
+     "name": "Paid Gemini API key",
+     "price": 0,
+     "note": "Pay per token (see Gemini API prices)"
+    },
+    {
+     "name": "Code Assist Standard",
+     "price": null,
+     "note": "Seat price not verified",
+     "status": "unverified"
+    },
+    {
+     "name": "Code Assist Enterprise",
+     "price": null,
+     "note": "Seat price not verified",
+     "status": "unverified"
+    }
+   ]
+  }
+ ],
+ "models": [
+  {
+   "id": "claude-fable-5.1",
+   "name": "Claude Fable 5.1",
+   "vendor": "Anthropic",
+   "in": 10,
+   "out": 50,
+   "cached": null,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "claude-opus-5.5",
+   "name": "Claude Opus 5.5",
+   "vendor": "Anthropic",
+   "in": 4,
+   "out": 20,
+   "cached": 0.2,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Cache-read figure parsed from page layout; confirm"
+  },
+  {
+   "id": "claude-sonnet-5.5",
+   "name": "Claude Sonnet 5.5",
+   "vendor": "Anthropic",
+   "in": 2,
+   "out": 10,
+   "cached": null,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "claude-haiku-5.5",
+   "name": "Claude Haiku 5.5",
+   "vendor": "Anthropic",
+   "in": 0.5,
+   "out": 2.5,
+   "cached": null,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Prompts \u2264100K tokens"
+  },
+  {
+   "id": "claude-opus-5",
+   "name": "Claude Opus 5 (legacy)",
+   "vendor": "Anthropic",
+   "in": 5,
+   "out": 25,
+   "cached": 0.5,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "claude-sonnet-4.6",
+   "name": "Claude Sonnet 4.6 (legacy)",
+   "vendor": "Anthropic",
+   "in": 3,
+   "out": 15,
+   "cached": 0.3,
+   "source": "https://claude.com/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "gpt-6-astra",
+   "name": "GPT-6 Astra",
+   "vendor": "OpenAI",
+   "in": 10,
+   "out": 50,
+   "cached": 1,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "\u2264272K context"
+  },
+  {
+   "id": "gpt-6.1-sol",
+   "name": "GPT-6.1 Sol",
+   "vendor": "OpenAI",
+   "in": 2,
+   "out": 10,
+   "cached": 0.1,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "\u2264272K context"
+  },
+  {
+   "id": "gpt-6-luna",
+   "name": "GPT-6 Luna",
+   "vendor": "OpenAI",
+   "in": 0.1,
+   "out": 0.5,
+   "cached": 0.01,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "gpt-5.6-sol",
+   "name": "GPT-5.6 Sol",
+   "vendor": "OpenAI",
+   "in": 4,
+   "out": 20,
+   "cached": 0.4,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Promotional pricing at least through Nov 21, 2026"
+  },
+  {
+   "id": "gpt-5.3-codex",
+   "name": "GPT-5.3 Codex",
+   "vendor": "OpenAI",
+   "in": 1.75,
+   "out": 14,
+   "cached": 0.175,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "gemini-4-argon",
+   "name": "Gemini 4 Argon",
+   "vendor": "Google",
+   "in": 2,
+   "out": 10,
+   "cached": 0.1,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Doubles to $4/$20 on Dec 1, 2026"
+  },
+  {
+   "id": "gemini-3.8-flash",
+   "name": "Gemini 3.8 Flash",
+   "vendor": "Google",
+   "in": 0.75,
+   "out": 3.75,
+   "cached": 0.075,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Doubles to $1.50/$7.50 on Jan 1, 2027"
+  },
+  {
+   "id": "gemini-3.1-pro-preview",
+   "name": "Gemini 3.1 Pro Preview",
+   "vendor": "Google",
+   "in": 2,
+   "out": 12,
+   "cached": 0.2,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "Prompts \u2264200K"
+  },
+  {
+   "id": "gemini-3.5-flash-lite",
+   "name": "Gemini 3.5 Flash-Lite",
+   "vendor": "Google",
+   "in": 0.3,
+   "out": 2.5,
+   "cached": 0.03,
+   "source": "https://ai.google.dev/gemini-api/docs/pricing",
+   "verified": "2026-10-13",
+   "status": "verified"
+  },
+  {
+   "id": "grok-4.7",
+   "name": "Grok 4.7",
+   "vendor": "xAI",
+   "in": 2,
+   "out": 6,
+   "cached": 0.5,
+   "source": "https://docs.x.ai/docs/models",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "<200K prompt tokens"
+  },
+  {
+   "id": "grok-build-0.1",
+   "name": "Grok Build 0.1",
+   "vendor": "xAI",
+   "in": 1,
+   "out": 2,
+   "cached": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "<200K prompt tokens"
+  },
+  {
+   "id": "grok-4.3",
+   "name": "Grok 4.3",
+   "vendor": "xAI",
+   "in": 1.25,
+   "out": 2.5,
+   "cached": 0.2,
+   "source": "https://docs.x.ai/docs/models",
+   "verified": "2026-10-13",
+   "status": "verified",
+   "note": "<200K prompt tokens"
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://quotaburn.com/sitemap.xml

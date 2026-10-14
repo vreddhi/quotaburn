@@ -1,0 +1,24 @@
+name: Sponsor inquiry
+description: Sponsor a placement on QuotaBurn
+title: "Sponsor inquiry: "
+labels: ["sponsor"]
+body:
+  - type: input
+    id: company
+    attributes: {label: Company / product, placeholder: "Acme LLM Gateway"}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: Product URL}
+    validations: {required: true}
+  - type: dropdown
+    id: slot
+    attributes:
+      label: Preferred placement
+      options: ["Homepage", "Calculator", "API price table", "Tool pages", "Newsletter", "Not sure"]
+  - type: input
+    id: contact
+    attributes: {label: Contact email (optional — or we'll reply here)}
+  - type: textarea
+    id: notes
+    attributes: {label: Anything else (budget, dates)}
