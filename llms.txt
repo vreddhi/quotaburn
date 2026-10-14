@@ -23,6 +23,11 @@
 - [Codex vs Claude Code cost](https://quotaburn.com/codex-vs-claude-code-cost/)
 - [How to stop hitting AI usage limits](https://quotaburn.com/stop-hitting-ai-usage-limits/)
 - [Prompt caching savings calculator](https://quotaburn.com/prompt-caching-calculator/)
+- [Windsurf pricing 2026 (now Devin Desktop)](https://quotaburn.com/windsurf-pricing/)
+- [GitHub Copilot pricing 2026 and AI Credits](https://quotaburn.com/github-copilot-pricing/)
+- [OpenAI Codex pricing 2026](https://quotaburn.com/codex-pricing/)
+- [Gemini CLI limits and pricing 2026](https://quotaburn.com/gemini-cli-limits/)
+- [Devin pricing 2026](https://quotaburn.com/devin-pricing/)
 - [Methodology](https://quotaburn.com/methodology/)
 
 ## Quick facts
