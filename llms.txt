@@ -31,6 +31,9 @@
 - [Every AI coding plan ranked by price](https://quotaburn.com/ai-coding-plans-compared/)
 - [Best AI coding plans at $20 a month or less](https://quotaburn.com/best-ai-coding-plan-under-20/)
 - [API vs subscription: which is cheaper for coding agents?](https://quotaburn.com/api-vs-subscription-agent-cost/)
+- [Accenture caps Claude at $29 per employee per month](https://quotaburn.com/accenture-claude-29-cap/)
+- [ChatGPT Go and Codex: what $8 gets you](https://quotaburn.com/chatgpt-go-codex/)
+- [Codex Fast mode: how much faster it burns your usage](https://quotaburn.com/codex-fast-mode-usage/)
 - [Methodology](https://quotaburn.com/methodology/)
 
 ## Quick facts
