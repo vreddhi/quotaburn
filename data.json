@@ -3,7 +3,7 @@
   "name": "QuotaBurn",
   "tagline": "Agent cost & usage-limit tracker",
   "url": "https://quotaburn.com",
-  "data_verified": "2026-10-13"
+  "data_verified": "2026-10-19"
  },
  "tools": [
   {
@@ -11,7 +11,7 @@
    "name": "Claude Code",
    "vendor": "Anthropic",
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Usage resets on a rolling 5-hour session window; paid plans add weekly limits. Claude Code shares one usage pool with Claude chat. Pro = at least 5x Free per session; Max = 5x or 20x Pro. No fixed message count is published. Past the limit you can enable usage credits billed at standard API rates.",
    "plans": [
@@ -48,7 +48,7 @@
    "name": "Cursor",
    "vendor": "Cursor (sold via X Subscription Corp)",
    "source": "https://cursor.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Every tier has a usage pool shared across Cursor and Grok that refreshes weekly. Plus = Grok models only. Premium and up: third-party models (Claude, GPT, etc.) are billed separately at API list price, with optional spending caps. Top-offs available.",
    "plans": [
@@ -89,7 +89,7 @@
    "name": "OpenAI Codex",
    "vendor": "OpenAI",
    "source": "https://learn.chatgpt.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Plus: rolling 5-hour window plus possible weekly limits. OpenAI's estimate for Plus is 15-160 local GPT-6.1 Sol messages, 15-150 GPT-6 Sol, 5-45 GPT-6 Astra, or 350-3,000 GPT-6 Luna messages per 5 hours. Pro plans currently have no 5-hour limit (weekly limits may apply). Credits can extend usage; Codex CLI can also run on an API key at API prices. GPT-5.5 retired from Codex with ChatGPT sign-in on 2026-10-14 (API-key Codex unaffected).",
    "plans": [
@@ -116,7 +116,7 @@
     {
      "name": "Pro 200",
      "price": 200,
-     "note": "More usage than Pro 100 (source: help.openai.com/en/articles/9793128)"
+     "note": "More usage than Pro 100. Grandfathered higher allowance (if eligible Sep 22\u201329 2026) ends 2026-10-29; after that, new/renewed Pro 200 uses a lower included allowance at the same $200/mo (help.openai.com/en/articles/9793128)"
     },
     {
      "name": "Pro 500",
@@ -135,7 +135,7 @@
    "name": "GitHub Copilot",
    "vendor": "GitHub / Microsoft",
    "source": "https://github.com/features/copilot/plans",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Agent mode, chat, code review, cloud agent and CLI consume GitHub AI Credits (1 credit = $0.01); credits vary by model. Allowance resets monthly. Completions and next-edit suggestions are unlimited on paid plans. Free: 2,000 completions + 50 chat requests. Past the allowance: set a paid-usage budget or switch to a cheaper model.",
    "plans": [
@@ -165,8 +165,8 @@
    "slug": "windsurf-devin-desktop",
    "name": "Windsurf (now Devin Desktop)",
    "vendor": "Cognition",
-   "source": "https://windsurf.com/blog/windsurf-pricing-plans",
-   "verified": "2026-10-13",
+   "source": "https://devin.ai/blog/windsurf-pricing-plans",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "No credits: quota refreshes daily and weekly. Pro/Teams published estimates: 7-27 msgs/day on Premium Plus models (e.g. Opus 4.6, GPT-5.4), 8-101 on Premium, 47-190 on Lightweight; Max: 42-170 / 47-631 / 291-1,190. Extra usage billed at API pricing. Windsurf was rebranded Devin Desktop (third-party report); windsurf.com/pricing now 404s.",
    "plans": [
@@ -197,7 +197,7 @@
    "name": "Devin",
    "vendor": "Cognition",
    "source": "https://docs.devin.ai/admin/billing/self-serve",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Self-serve plans include a quota that refreshes daily and weekly; overage is billed as dollar-denominated on-demand credits at API pricing. ACUs remain for Enterprise only. Quota sizes are not published in tokens.",
    "plans": [
@@ -228,7 +228,7 @@
    "name": "Gemini CLI",
    "vendor": "Google",
    "source": "https://docs.cloud.google.com/gemini/docs/quotas",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "limits": "Gemini CLI + Code Assist agent mode share a quota: 1,500 requests/user/day (Code Assist Standard), 2,000 (Enterprise). One prompt can trigger several model requests. Otherwise metered per token via a paid Gemini API key. The old personal-Google-account free tier (1,000 req/day) is reported discontinued since June 18, 2026; the GitHub README still advertises it.",
    "plans": [
@@ -259,9 +259,9 @@
    "vendor": "Anthropic",
    "in": 10,
    "out": 50,
-   "cached": null,
+   "cached": 0.25,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -272,9 +272,8 @@
    "out": 20,
    "cached": 0.2,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
-   "status": "verified",
-   "note": "Cache-read figure parsed from page layout; confirm"
+   "verified": "2026-10-19",
+   "status": "verified"
   },
   {
    "id": "claude-sonnet-5.5",
@@ -284,7 +283,7 @@
    "out": 10,
    "cached": null,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -293,9 +292,9 @@
    "vendor": "Anthropic",
    "in": 0.5,
    "out": 2.5,
-   "cached": null,
+   "cached": 0.125,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "Prompts \u2264100K tokens"
   },
@@ -307,7 +306,7 @@
    "out": 25,
    "cached": 0.5,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -318,7 +317,7 @@
    "out": 15,
    "cached": 0.3,
    "source": "https://claude.com/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -329,7 +328,7 @@
    "out": 50,
    "cached": 1,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "\u2264272K context"
   },
@@ -341,7 +340,7 @@
    "out": 10,
    "cached": 0.1,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "\u2264272K context"
   },
@@ -353,7 +352,7 @@
    "out": 10.0,
    "cached": 0.2,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "\u2264272K context"
   },
@@ -365,7 +364,7 @@
    "out": 0.5,
    "cached": 0.01,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -376,7 +375,7 @@
    "out": 20,
    "cached": 0.4,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "Promotional pricing at least through Nov 21, 2026"
   },
@@ -388,7 +387,7 @@
    "out": 14,
    "cached": 0.175,
    "source": "https://platform.openai.com/docs/pricing",
-   "verified": "2026-10-16",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -399,7 +398,7 @@
    "out": 10,
    "cached": 0.1,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "Doubles to $4/$20 on Dec 1, 2026"
   },
@@ -411,7 +410,7 @@
    "out": 3.75,
    "cached": 0.075,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "Doubles to $1.50/$7.50 on Jan 1, 2027"
   },
@@ -423,7 +422,7 @@
    "out": 12,
    "cached": 0.2,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "Prompts \u2264200K"
   },
@@ -435,7 +434,7 @@
    "out": 2.5,
    "cached": 0.03,
    "source": "https://ai.google.dev/gemini-api/docs/pricing",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified"
   },
   {
@@ -446,7 +445,7 @@
    "out": 6,
    "cached": 0.5,
    "source": "https://docs.x.ai/docs/models",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "<200K prompt tokens"
   },
@@ -458,7 +457,7 @@
    "out": 2,
    "cached": 0.2,
    "source": "https://docs.x.ai/docs/models",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "<200K prompt tokens"
   },
@@ -470,7 +469,7 @@
    "out": 2.5,
    "cached": 0.2,
    "source": "https://docs.x.ai/docs/models",
-   "verified": "2026-10-13",
+   "verified": "2026-10-19",
    "status": "verified",
    "note": "<200K prompt tokens"
   }
