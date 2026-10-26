@@ -1,5 +1,24 @@
 # QuotaBurn changelog
 
+## 2026-10-26 (Monday price re-verify)
+
+### Confirmed price / data changes
+- **Claude Haiku 5.5** (prompts ≤100K tokens) corrected: was $0.50 in / $2.50 out / $0.125 cache read → **$0.10 in / $0.50 out / $0.01 cache read** per 1M tokens. The old row mixed the >100K input/output prices with the ≤100K cache-write price. Added the >100K tier as `over_threshold`: **$0.50 / $2.50 / $0.05 cache read** ([claude.com/pricing](https://claude.com/pricing), page HTML read 2026-10-26).
+- **Claude Sonnet 5.5** cache read: previously unset → **$0.10 / 1M tokens** (cache write $2.50) ([claude.com/pricing](https://claude.com/pricing)).
+- **GitHub Copilot** Free limits text: removed "50 chat requests" (no longer on the page); the page now says Free gets 2,000 completions/month plus limited chat and agent usage ([github.com/features/copilot/plans](https://github.com/features/copilot/plans)).
+
+### Re-verified, no price change
+- Tools: Claude Code (Max 20x price still **unverified**, page still says "From $100"), Cursor, OpenAI Codex, GitHub Copilot, Windsurf/Devin Desktop, Devin, Gemini CLI (Code Assist seat prices still unverified; 1,500/2,000 requests per user per day confirmed).
+- Models: Fable 5.1, Opus 5.5, legacy Opus 5, legacy Sonnet 4.6; all OpenAI rows; all Gemini rows; all xAI rows.
+- Watch items: ChatGPT Pro 200 grandfathering still ends **2026-10-29**, price stays $200 ([help.openai.com/en/articles/9793128](https://help.openai.com/en/articles/9793128)). Gemini 4 Argon is still $2/$10 through Nov 30 and $4/$20 from **2026-12-01** (cache $0.10 → $0.20). Gemini 3.8 Flash doubles 2027-01-01. GPT-5.6 Sol promo pricing still "at least through November 21, 2026" (platform.openai.com and learn.chatgpt.com).
+
+### New page
+- `/claude-api-pricing/`: Claude API pricing for Fable 5.1, Opus 5.5, Sonnet 5.5 and Haiku 5.5, plus the Haiku 100K-token threshold, legacy models and a monthly cost example (all from data.json).
+
+### Fetch notes
+- WebFetch's markdown of claude.com/pricing dropped the Read/Write labels on Haiku/Sonnet. I used curl on the raw HTML to confirm each label.
+- Devin sources and Google quotas were confirmed with curl (200).
+
 ## 2026-10-19 (Monday price re-verify)
 
 ### Confirmed price / data changes
