@@ -1,5 +1,11 @@
 # QuotaBurn changelog
 
+## 2026-10-27 (new model + copy fix)
+
+### Confirmed price / data changes
+- **GPT-6.1 Terra** added (released 2026-10-26): **$1 in / $0.05 cached / $5 out** per 1M tokens, standard, ≤272K input tokens ([platform.openai.com/docs/pricing](https://platform.openai.com/docs/pricing), fetched 2026-10-27; matches [openai.com/index/introducing-gpt-6-1-terra](https://openai.com/index/introducing-gpt-6-1-terra/)). Batch is $0.50 / $0.025 / $2.50.
+- **/codex-vs-claude-code-cost/** FAQ: removed the stale "Sonnet 5.5 has no cache price listed" claim. Claude Sonnet 5.5 cache read is $0.10, the same as GPT-6.1 Sol, so the two have identical list prices ($2 / $0.10 / $10; claude.com/pricing re-checked 2026-10-27).
+
 ## 2026-10-26 (Monday price re-verify)
 
 ### Confirmed price / data changes

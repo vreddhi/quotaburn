@@ -351,6 +351,18 @@
    "note": "\u2264272K context"
   },
   {
+   "id": "gpt-6.1-terra",
+   "name": "GPT-6.1 Terra",
+   "vendor": "OpenAI",
+   "in": 1,
+   "out": 5,
+   "cached": 0.05,
+   "source": "https://platform.openai.com/docs/pricing",
+   "verified": "2026-10-27",
+   "status": "verified",
+   "note": "\u2264272K context; released Oct 26, 2026"
+  },
+  {
    "id": "gpt-6-sol",
    "name": "GPT-6 Sol",
    "vendor": "OpenAI",
